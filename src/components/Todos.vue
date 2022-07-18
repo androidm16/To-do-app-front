@@ -31,12 +31,12 @@ export default {
     methods: {
         ...mapActions(["fetchTodos", "deleteTodo", "updateTodo"]),
         onDblClick(todo) {
-            const updTodo = {
+            const updateTodo = {
                 id: todo.id,
-                title: payload.title,
+                title: todo.title,
                 completed: !todo.completed
-            }
-            this.updateTodo(updTodo);
+            };
+            this.updateTodo(updateTodo);
         }
     },
     computed: mapGetters(["allTodos"]),
@@ -53,7 +53,7 @@ export default {
 }
 .todo {
   border: 1px solid #ccc;
-  background: #41b883;
+  background: #5C2961;
   padding: 1rem;
   border-radius: 5px;
   text-align: center;
@@ -76,13 +76,13 @@ i {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background: #35495e;
+  background: #41b883;
 }
 .incomplete-box {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background: #41b883;
+  background: #5C2961;
 }
 .is-complete {
   background: #35495e;

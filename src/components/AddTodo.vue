@@ -1,5 +1,8 @@
 <template>
     <div>
+        <h1 style="position: relative;">Siyabonga's Todo-list</h1>
+    </div>
+    <div>
         <h3>Add Task</h3>
         <div class="add">
             <form @submit.prevent="addTodo({title})">
@@ -32,14 +35,14 @@ form {
 input[type="text"] {
   flex: 10;
   padding: 10px;
-  border: 1px solid #41b883;
+  border: 1px solid #5C2961;
   outline: 0;
 }
 input[type="submit"] {
   flex: 2;
-  background: #41b883;
+  background: #5C2961;
   color: #fff;
-  border: 1px #41b883 solid;
+  border: 1px #5C2961 solid;
   cursor: pointer;
 }
 </style>

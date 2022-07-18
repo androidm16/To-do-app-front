@@ -59,10 +59,10 @@ export default createStore({
 
       commit('setTodos', filteredTodos);
     },
-    async updateTodo({ commit }, updTodo) {
-      const response = await axios.put(`http://localhost:4500/api/task/${updTodo.id}`, updTodo);
+    async updateTodo({ commit }, updateTodo) {
+      const response = await axios.put(`http://localhost:4500/api/task/${updateTodo.id}`, updateTodo);
 
-      // console.log(response.data);
+      console.log(response.data);
 
       commit('updateTodo', response.data)
     }
